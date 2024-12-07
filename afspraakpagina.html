@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afspraak maken - KapperK</title>
+    <link rel="stylesheet" href="afspraakpagina.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Afspraak maken</h1>
+    </header>
+
+    <nav>
+        <a href="http://127.0.0.1:5500/voorpagina.html#">Home</a>
+    </nav>
+    <div class="container">
+        <h2>Vul je gegevens in</h2>
+        <form action="#" method="post">
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="naam" placeholder="Bijvoorbeeld: jouwnaam" required>
+            
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" placeholder="Bijvoorbeeld: jouwnaam@example.com" required>
+            
+            <label for="telefoon">Telefoonnummer</label>
+            <input type="tel" id="telefoon" name="telefoon" placeholder="Bijvoorbeeld: 0612345678" required>
+            
+            <label for="datum">Datum</label>
+            <input type="date" id="datum" name="datum" required>
+            
+            <label for="tijd">Tijd</label>
+            <input type="time" id="tijd" name="tijd" required>
+            
+            <label for="behandeling">Behandeling</label>
+            <select id="behandeling" name="behandeling" required>
+                <option value="">-- Kies een behandeling --</option>
+                <option value="knippen">Knippen €15</option>
+                <option value="contour">Contouren €10</option>
+                <option value="trim">Trimmen €5</option>
+            </select>
+            
+            <label for="comment">Opmerkingen (optioneel)</label>
+            <textarea id="comment" name="comment" placeholder="Tapderfade met lineup."></textarea>
+            
+            <button type="submit">Afspraak bevestigen</button>
+        </form>
+    </div>
+    <footer>
+        <p>© 2024 KapperK. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
